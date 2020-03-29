@@ -1,0 +1,29 @@
+
+\begin{titlepage}
+\maketitle
+\thispagestyle{empty}
+\end{titlepage}
+
+
+\let\abk\nomenclature
+\setlength{\nomlabelwidth}{.20\hsize}
+\renewcommand{\nomlabel}[1]{#1 \dotfill}
+\setlength{\nomitemsep}{-\parsep}
+\makenomenclature
+
+
+\setcounter{page}{1}
+\tableofcontents
+\addcontentsline{toc}{section}{Table of Contents}
+
+% Abbildungsverzeichnis
+\listoffigures
+\addcontentsline{toc}{section}{List of Figures}
+
+\lstlistoflistings
+\addcontentsline{toc}{section}{Listings}
+
+% Nomenklatur
+\printnomenclature
+\addcontentsline{toc}{section}{Nomenclature}
+\renewcommand{\nomname}{Nomenclature}

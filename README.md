@@ -1,2 +1,2 @@
 # tex-templates
-Some templates
+Basic set of tex templates

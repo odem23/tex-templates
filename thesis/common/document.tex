@@ -1,0 +1,36 @@
+\documentclass[10pt,abstracton]{scrreprt}
+%\usepackage[ngerman]{babel}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{scrhack}
+\usepackage{nomencl}
+\usepackage[
+backend=biber,
+style=alphabetic,
+citestyle=ieee
+]{biblatex}
+
+\bibliography{common/bibliographie} 
+
+\include{common/header}
+\begin{document}
+\pagenumbering{Roman}
+\include{common/common}
+\include{common/nomen}
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+% Chapters
+\include{chapters/introduction}
+
+% Appendix
+\include{common/acknowledgements}
+\include{common/declaration}
+\printbibliography
+
+\end{document}
